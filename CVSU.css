@@ -1,0 +1,384 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #FCFAEE;
+    background-color: #FFFAE7;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+
+/* FOR NAV */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FEFBF6;
+    padding: 10px 20px;
+    font-size: 20px;
+    position: relative;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 75px;
+    margin-right: 10px;
+}
+
+.university-name {
+    color: #347928;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* Navigation Links */
+#nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    font-weight: bold;
+}
+
+#nav-links li {
+    margin: 0 15px;
+    width: 100%;
+}
+
+#nav-links a {
+    color: #347928;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#nav-links a:hover {
+    background-color: #347928;
+    color: #FCFAEE;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    font-size: 25px;
+    cursor: pointer;
+    color: #347928;
+    margin-left: auto;
+}
+
+
+
+/* FOR MAIN */
+section {
+    color: #347928;
+    display: flex;
+    flex-direction: column;
+}
+
+/* FOR HOME */
+.parent-container {
+    display: flex;
+}
+
+.container-home,
+.container-home-1 {
+    width: 50%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #347928;
+}
+
+.container-home {
+    color: #FCFAEE;
+    text-align: center;
+}
+
+.container-home-1 img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+/* FOR HOME - M-V-QP */
+.parent-container-1 {
+    display: flex;
+}
+
+.cvsu,
+.cvsu-1 {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FEFBF6;
+    padding: 10px;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.cvsu-1 {
+    background-color: #FFFAE7;
+}
+
+.cvsu p,
+.cvsu-1 p {
+    text-align: justify;
+    width: 90%;
+}
+
+
+
+/* FOR ABOUT */
+.parent-container-2 {
+    display: flex;
+}
+
+.cvsu-programs {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #347928;
+    padding: 5px;
+    font-size: 15px;
+    color: #FCFAEE;
+}
+
+.cvsu-programs h1,
+.cvsu-programs p {
+    text-align: left;
+    padding: 0 0 0 15px;
+    width: 90%;
+}
+
+.csvu-orgs {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #347928;
+    padding: 5px;
+    font-size: 15px;
+    color: #FCFAEE;
+}
+
+.csvu-orgs p {
+    text-align: center;
+    width: 90%;
+}
+
+
+
+/* FOR CONTACT */
+.location {
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.container-contact-stingray {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.container-contact,
+.container-stingray {
+    flex: 1 1 300px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.container-contact {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 15px;
+    height: 440px;
+    background-color: #FFFED3;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+input[type="submit"] {
+    background-color: #347928;
+    color: #FCFAEE;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #347928;
+}
+
+.container-stingray {
+    height: 440px;
+    background-color: #FEFBF6;
+}
+
+.stingrays {
+    font-weight: bold;
+    font-size: 80px;
+    text-align: center;
+    padding: 70px 0 0 0;
+}
+
+input::placeholder,
+textarea::placeholder {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    color: #347928;
+}
+
+input[type="submit"] {
+    background-color: #218838;
+    color: #FCFAEE;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+/* FOR FOOTER */
+footer {
+    background-color: #347928;
+    font-size: 20px;
+    text-align: center;
+    padding: 15px 0;
+}
+
+
+
+/* FOR BEING RESPONSIVE */
+@media (max-width: 1024px) {
+    .university-name {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .university-name {
+        font-size: 25px;
+    }
+
+    #nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        background-color: #347928;
+        width: 30%;
+        top: 105px;
+        right: 0;
+        z-index: 1;
+    }
+
+    #nav-links a {
+        color: #FCFAEE;
+    }
+
+    #nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+        margin-right: auto;
+    }
+
+    #nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .parent-container {
+        flex-direction: column;
+    }
+
+    .container-home,
+    .container-home-1 {
+        width: 100%;
+        height: auto;
+    }
+
+    .cvsu,
+    .cvsu-1 {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .cvsu p,
+    .cvsu-1 p {
+        text-align: justify;
+    }
+
+    .container-contact-stingray {
+        flex-direction: column;
+    }
+
+    .container-contact,
+    .container-stingray {
+        width: 100%;
+        max-width: none;
+    }
+
+    .stingrays {
+        font-size: 35px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 684px) {
+    .university-name {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 667px) {
+    .university-name {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 414px) {
+    .university-name {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 375px) {
+    .university-name {
+        font-size: 15px;
+    }
+}
